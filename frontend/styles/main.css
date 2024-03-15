@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: rgb(4, 102, 207);
+    font-family: Helvetica, Sans-Serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo{
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.todo h2{
+    margin-bottom :20px;
+    text-align: center;
+    margin-bottom :20px;
+    width: 100%;
+}
+
+input{
+    padding :10px;
+    background: transparent;
+    margin-bottom :10px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.add-btn{
+    border-radius: 5px;
+    background-color: rgb(4, 102, 207);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+ul{
+    width: 100%;
+}
+
+ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(4, 102, 207);
+    border-radius: 10px;
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+ul p {
+    font-size: large;
+    width: 80%;
+    word-wrap: break-word;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+ul button{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 300px) {
+    .todo {
+      padding: 10px;
+    }
+    .add-btn{
+        padding: 2px;
+    }
+}
